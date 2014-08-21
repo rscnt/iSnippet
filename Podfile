@@ -1,4 +1,4 @@
-target "snipettClient" do
+target "snippetClient" do
     pod 'AFNetworking', '~> 2.3'
     #pod 'JSONModel', '~> 0.13'
     pod 'FXForms', '~> 1.1'
@@ -6,7 +6,7 @@ target "snipettClient" do
     #pod 'IQKeyboardManager'
 end
 
-target "snipettClient" do
+target "snippetClient" do
 
 end
 
