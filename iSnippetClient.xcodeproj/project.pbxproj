@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC5DAC9F19A68CFB00556000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DAC9E19A68CFB00556000 /* Foundation.framework */; };
+		EC5DACA119A68CFB00556000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DACA019A68CFB00556000 /* CoreGraphics.framework */; };
+		EC5DACA319A68CFB00556000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DACA219A68CFB00556000 /* UIKit.framework */; };
+		EC5DACA519A68CFB00556000 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DACA419A68CFB00556000 /* CoreData.framework */; };
+		EC5DACAB19A68CFB00556000 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5DACA919A68CFB00556000 /* InfoPlist.strings */; };
+		EC5DACAD19A68CFB00556000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACAC19A68CFB00556000 /* main.m */; };
+		EC5DACB119A68CFB00556000 /* RSClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACB019A68CFB00556000 /* RSClientAppDelegate.m */; };
+		EC5DACB419A68CFB00556000 /* iSnippetClient.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACB219A68CFB00556000 /* iSnippetClient.xcdatamodeld */; };
+		EC5DACB619A68CFB00556000 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5DACB519A68CFB00556000 /* Images.xcassets */; };
+		EC5DACBD19A68CFB00556000 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DACBC19A68CFB00556000 /* XCTest.framework */; };
+		EC5DACBE19A68CFB00556000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DAC9E19A68CFB00556000 /* Foundation.framework */; };
+		EC5DACBF19A68CFB00556000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DACA219A68CFB00556000 /* UIKit.framework */; };
+		EC5DACC019A68CFB00556000 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5DACA419A68CFB00556000 /* CoreData.framework */; };
+		EC5DACC819A68CFB00556000 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC5DACC619A68CFB00556000 /* InfoPlist.strings */; };
+		EC5DACCA19A68CFB00556000 /* iSnippetClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACC919A68CFB00556000 /* iSnippetClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC5DACC119A68CFB00556000 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5DAC9319A68CFB00556000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC5DAC9A19A68CFB00556000;
+			remoteInfo = iSnippetClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC5DAC9B19A68CFB00556000 /* iSnippetClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSnippetClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5DAC9E19A68CFB00556000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EC5DACA019A68CFB00556000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EC5DACA219A68CFB00556000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EC5DACA419A68CFB00556000 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EC5DACA819A68CFB00556000 /* iSnippetClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSnippetClient-Info.plist"; sourceTree = "<group>"; };
+		EC5DACAA19A68CFB00556000 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC5DACAC19A68CFB00556000 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC5DACAE19A68CFB00556000 /* iSnippetClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSnippetClient-Prefix.pch"; sourceTree = "<group>"; };
+		EC5DACAF19A68CFB00556000 /* RSClientAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSClientAppDelegate.h; sourceTree = "<group>"; };
+		EC5DACB019A68CFB00556000 /* RSClientAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSClientAppDelegate.m; sourceTree = "<group>"; };
+		EC5DACB319A68CFB00556000 /* iSnippetClient.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iSnippetClient.xcdatamodel; sourceTree = "<group>"; };
+		EC5DACB519A68CFB00556000 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EC5DACBB19A68CFB00556000 /* iSnippetClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSnippetClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC5DACBC19A68CFB00556000 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EC5DACC519A68CFB00556000 /* iSnippetClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iSnippetClientTests-Info.plist"; sourceTree = "<group>"; };
+		EC5DACC719A68CFB00556000 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EC5DACC919A68CFB00556000 /* iSnippetClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSnippetClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC5DAC9819A68CFB00556000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5DACA119A68CFB00556000 /* CoreGraphics.framework in Frameworks */,
+				EC5DACA519A68CFB00556000 /* CoreData.framework in Frameworks */,
+				EC5DACA319A68CFB00556000 /* UIKit.framework in Frameworks */,
+				EC5DAC9F19A68CFB00556000 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5DACB819A68CFB00556000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5DACBD19A68CFB00556000 /* XCTest.framework in Frameworks */,
+				EC5DACC019A68CFB00556000 /* CoreData.framework in Frameworks */,
+				EC5DACBF19A68CFB00556000 /* UIKit.framework in Frameworks */,
+				EC5DACBE19A68CFB00556000 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC5DAC9219A68CFB00556000 = {
+			isa = PBXGroup;
+			children = (
+				EC5DACA619A68CFB00556000 /* iSnippetClient */,
+				EC5DACC319A68CFB00556000 /* iSnippetClientTests */,
+				EC5DAC9D19A68CFB00556000 /* Frameworks */,
+				EC5DAC9C19A68CFB00556000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC5DAC9C19A68CFB00556000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DAC9B19A68CFB00556000 /* iSnippetClient.app */,
+				EC5DACBB19A68CFB00556000 /* iSnippetClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC5DAC9D19A68CFB00556000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DAC9E19A68CFB00556000 /* Foundation.framework */,
+				EC5DACA019A68CFB00556000 /* CoreGraphics.framework */,
+				EC5DACA219A68CFB00556000 /* UIKit.framework */,
+				EC5DACA419A68CFB00556000 /* CoreData.framework */,
+				EC5DACBC19A68CFB00556000 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC5DACA619A68CFB00556000 /* iSnippetClient */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DACAF19A68CFB00556000 /* RSClientAppDelegate.h */,
+				EC5DACB019A68CFB00556000 /* RSClientAppDelegate.m */,
+				EC5DACB519A68CFB00556000 /* Images.xcassets */,
+				EC5DACB219A68CFB00556000 /* iSnippetClient.xcdatamodeld */,
+				EC5DACA719A68CFB00556000 /* Supporting Files */,
+			);
+			path = iSnippetClient;
+			sourceTree = "<group>";
+		};
+		EC5DACA719A68CFB00556000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DACA819A68CFB00556000 /* iSnippetClient-Info.plist */,
+				EC5DACA919A68CFB00556000 /* InfoPlist.strings */,
+				EC5DACAC19A68CFB00556000 /* main.m */,
+				EC5DACAE19A68CFB00556000 /* iSnippetClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC5DACC319A68CFB00556000 /* iSnippetClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DACC919A68CFB00556000 /* iSnippetClientTests.m */,
+				EC5DACC419A68CFB00556000 /* Supporting Files */,
+			);
+			path = iSnippetClientTests;
+			sourceTree = "<group>";
+		};
+		EC5DACC419A68CFB00556000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC5DACC519A68CFB00556000 /* iSnippetClientTests-Info.plist */,
+				EC5DACC619A68CFB00556000 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC5DAC9A19A68CFB00556000 /* iSnippetClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5DACCD19A68CFB00556000 /* Build configuration list for PBXNativeTarget "iSnippetClient" */;
+			buildPhases = (
+				EC5DAC9719A68CFB00556000 /* Sources */,
+				EC5DAC9819A68CFB00556000 /* Frameworks */,
+				EC5DAC9919A68CFB00556000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSnippetClient;
+			productName = iSnippetClient;
+			productReference = EC5DAC9B19A68CFB00556000 /* iSnippetClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC5DACBA19A68CFB00556000 /* iSnippetClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC5DACD019A68CFB00556000 /* Build configuration list for PBXNativeTarget "iSnippetClientTests" */;
+			buildPhases = (
+				EC5DACB719A68CFB00556000 /* Sources */,
+				EC5DACB819A68CFB00556000 /* Frameworks */,
+				EC5DACB919A68CFB00556000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC5DACC219A68CFB00556000 /* PBXTargetDependency */,
+			);
+			name = iSnippetClientTests;
+			productName = iSnippetClientTests;
+			productReference = EC5DACBB19A68CFB00556000 /* iSnippetClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC5DAC9319A68CFB00556000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RSClient;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = rscnt;
+				TargetAttributes = {
+					EC5DACBA19A68CFB00556000 = {
+						TestTargetID = EC5DAC9A19A68CFB00556000;
+					};
+				};
+			};
+			buildConfigurationList = EC5DAC9619A68CFB00556000 /* Build configuration list for PBXProject "iSnippetClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EC5DAC9219A68CFB00556000;
+			productRefGroup = EC5DAC9C19A68CFB00556000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC5DAC9A19A68CFB00556000 /* iSnippetClient */,
+				EC5DACBA19A68CFB00556000 /* iSnippetClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC5DAC9919A68CFB00556000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5DACAB19A68CFB00556000 /* InfoPlist.strings in Resources */,
+				EC5DACB619A68CFB00556000 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5DACB919A68CFB00556000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5DACC819A68CFB00556000 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC5DAC9719A68CFB00556000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5DACB119A68CFB00556000 /* RSClientAppDelegate.m in Sources */,
+				EC5DACAD19A68CFB00556000 /* main.m in Sources */,
+				EC5DACB419A68CFB00556000 /* iSnippetClient.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC5DACB719A68CFB00556000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5DACCA19A68CFB00556000 /* iSnippetClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC5DACC219A68CFB00556000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC5DAC9A19A68CFB00556000 /* iSnippetClient */;
+			targetProxy = EC5DACC119A68CFB00556000 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC5DACA919A68CFB00556000 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5DACAA19A68CFB00556000 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EC5DACC619A68CFB00556000 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC5DACC719A68CFB00556000 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC5DACCB19A68CFB00556000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EC5DACCC19A68CFB00556000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC5DACCE19A68CFB00556000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSnippetClient/iSnippetClient-Prefix.pch";
+				INFOPLIST_FILE = "iSnippetClient/iSnippetClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EC5DACCF19A68CFB00556000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSnippetClient/iSnippetClient-Prefix.pch";
+				INFOPLIST_FILE = "iSnippetClient/iSnippetClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EC5DACD119A68CFB00556000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSnippetClient.app/iSnippetClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSnippetClient/iSnippetClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iSnippetClientTests/iSnippetClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EC5DACD219A68CFB00556000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iSnippetClient.app/iSnippetClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iSnippetClient/iSnippetClient-Prefix.pch";
+				INFOPLIST_FILE = "iSnippetClientTests/iSnippetClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC5DAC9619A68CFB00556000 /* Build configuration list for PBXProject "iSnippetClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5DACCB19A68CFB00556000 /* Debug */,
+				EC5DACCC19A68CFB00556000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC5DACCD19A68CFB00556000 /* Build configuration list for PBXNativeTarget "iSnippetClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5DACCE19A68CFB00556000 /* Debug */,
+				EC5DACCF19A68CFB00556000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EC5DACD019A68CFB00556000 /* Build configuration list for PBXNativeTarget "iSnippetClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC5DACD119A68CFB00556000 /* Debug */,
+				EC5DACD219A68CFB00556000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EC5DACB219A68CFB00556000 /* iSnippetClient.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EC5DACB319A68CFB00556000 /* iSnippetClient.xcdatamodel */,
+			);
+			currentVersion = EC5DACB319A68CFB00556000 /* iSnippetClient.xcdatamodel */;
+			path = iSnippetClient.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EC5DAC9319A68CFB00556000 /* Project object */;
+}
