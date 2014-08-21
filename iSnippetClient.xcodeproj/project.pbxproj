@@ -115,6 +115,7 @@
 		EC5DACA619A68CFB00556000 /* iSnippetClient */ = {
 			isa = PBXGroup;
 			children = (
+				EC5DACD319A68D0600556000 /* Models */,
 				EC5DACAF19A68CFB00556000 /* RSClientAppDelegate.h */,
 				EC5DACB019A68CFB00556000 /* RSClientAppDelegate.m */,
 				EC5DACB519A68CFB00556000 /* Images.xcassets */,
@@ -151,6 +152,13 @@
 				EC5DACC619A68CFB00556000 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC5DACD319A68D0600556000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
