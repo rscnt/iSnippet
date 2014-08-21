@@ -10,4 +10,12 @@
 
 @implementation SCUser
 
+-(instancetype)get:(NSObject *)withParameters
+{
+    if (withParameters) {
+    } else {
+    }
+    return self;
+}
+
 @end

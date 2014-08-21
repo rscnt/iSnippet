@@ -10,4 +10,19 @@
 
 @implementation SCModelDetailed
 
+-(instancetype)init:(NSInteger *)withId
+{
+    self = [super init];
+    if (self) {
+        _id = withId;
+    }
+    return self;
+}
+
+-(NSString *)getInstanceUrl
+{
+    return [NSString stringWithFormat:@"%@%ld", SCModelDetailed.getModelEndPointUrl,
+            (long)self.id];
+}
+
 @end

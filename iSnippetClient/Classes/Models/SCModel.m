@@ -10,6 +10,25 @@
 
 @implementation SCModel
 
+#pragma mark Static messages.
+
++(NSString *)getApiEndPointUrl
+{
+    return [NSString stringWithFormat:@"%@%@", host, endpoint];
+}
+
++(NSString *)namespace
+{
+    return self.namespace;
+}
+
++(NSString *)getModelEndPointUrl
+{
+    return [NSString stringWithFormat:@"%@%@", self.getApiEndPointUrl, self.namespace];
+}
+
+#pragma mark Instance messages.
+
 -(instancetype)get:(NSObject *)withParameters
 {
     return self;

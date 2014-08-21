@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SCModelDetailed.h"
 
-@interface SCUser : NSObject
+/**
+ *  This class represents an user object
+ *  on the snippet server.
+ */
+@interface SCUser : SCModelDetailed
+
+@property (readonly, strong, nonatomic) NSString       *url;
+@property (strong, nonatomic          ) NSString       *username;
+@property (strong, nonatomic          ) NSMutableArray *snippets;
 
 @end
