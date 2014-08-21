@@ -8,7 +8,7 @@
 
 #import "SCModel.h"
 
-@implementation SCModel
+@implementation SCModel  
 
 #pragma mark Static messages.
 

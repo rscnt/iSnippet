@@ -19,4 +19,12 @@
 @property (strong, nonatomic          ) NSString       *username;
 @property (strong, nonatomic          ) NSMutableArray *snippets;
 
+/**
+ *  Set the user with the values 
+ * given by the dictionary.
+ *
+ *  @param dict The dictionary for the user.
+ */
+-(void)setProperties:(NSDictionary *)withDictionary;
+
 @end

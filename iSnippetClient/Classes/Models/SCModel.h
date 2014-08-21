@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mantle.h>
 
 static const NSString *host = @"http://127.0.0.1:8000";
 static const NSString *endpoint = @"/";
@@ -15,7 +16,7 @@ static const NSString *endpoint = @"/";
  *  This class is supposed to be abstract so please
  *  use it as an abstract class.
  */
-@interface SCModel : NSObject
+@interface SCModel : MTLModel
 
 #pragma mark Static messages.
 /**

@@ -13,9 +13,10 @@
 -(instancetype)init:(NSInteger *)withId
 {
     self = [super init];
-    if (self) {
-        _id = withId;
+    if (!self) {
+        return nil;
     }
+    _id = withId;
     return self;
 }
 
