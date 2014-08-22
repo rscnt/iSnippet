@@ -27,6 +27,7 @@
 		EC5DACE219A6926D00556000 /* SCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACE119A6926D00556000 /* SCUser.m */; };
 		EC5DACE619A69C8700556000 /* SCModelDetailed.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACE519A69C8700556000 /* SCModelDetailed.m */; };
 		EC5DACEA19A6A15D00556000 /* SCSharedClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACE919A6A15D00556000 /* SCSharedClient.m */; };
+		ECA25B7D19A7A38B0092F350 /* SCSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B7C19A7A38B0092F350 /* SCSnippet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		EC5DACE519A69C8700556000 /* SCModelDetailed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCModelDetailed.m; path = Classes/Models/SCModelDetailed.m; sourceTree = "<group>"; };
 		EC5DACE819A6A15D00556000 /* SCSharedClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSharedClient.h; path = Classes/Shared/SCSharedClient.h; sourceTree = "<group>"; };
 		EC5DACE919A6A15D00556000 /* SCSharedClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSharedClient.m; path = Classes/Shared/SCSharedClient.m; sourceTree = "<group>"; };
+		ECA25B7B19A7A38B0092F350 /* SCSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnippet.h; path = Classes/Models/SCSnippet/SCSnippet.h; sourceTree = "<group>"; };
+		ECA25B7C19A7A38B0092F350 /* SCSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSnippet.m; path = Classes/Models/SCSnippet/SCSnippet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +222,8 @@
 			children = (
 				EC5DACE019A6926D00556000 /* SCUser.h */,
 				EC5DACE119A6926D00556000 /* SCUser.m */,
+				ECA25B7B19A7A38B0092F350 /* SCSnippet.h */,
+				ECA25B7C19A7A38B0092F350 /* SCSnippet.m */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 				EC5DACB419A68CFB00556000 /* iSnippetClient.xcdatamodeld in Sources */,
 				EC5DACDE19A6923300556000 /* SCModel.m in Sources */,
 				EC5DACE219A6926D00556000 /* SCUser.m in Sources */,
+				ECA25B7D19A7A38B0092F350 /* SCSnippet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

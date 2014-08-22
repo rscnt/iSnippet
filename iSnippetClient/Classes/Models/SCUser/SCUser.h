@@ -20,11 +20,15 @@
 @property (strong, nonatomic          ) NSMutableArray *snippets;
 
 /**
- *  Set the user with the values 
- * given by the dictionary.
+ *  Given an username and password this methods send a request
+ *  to the server to authenticated the user.
  *
- *  @param dict The dictionary for the user.
+ *  @param username    string.
+ *  @param andPassword string.
+ *
+ *  @return an user object requested.
  */
--(void)setProperties:(NSDictionary *)withDictionary;
++(instancetype)authenticateUserWithUsername:(NSString *)username
+                                andPassword:(NSString*)andPassword;
 
 @end

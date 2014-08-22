@@ -12,24 +12,30 @@
 
 @implementation SCUser
 
--(void)setProperties:(NSDictionary *)withDictionary
+
++ (NSString *)namespace
 {
-    
+    return @"users/";
+}
+
++(instancetype)authenticateUserWithUsername:(NSString *)username andPassword:(NSString *)andPassword
+{
+    [[SCSharedClient sharedClient] setRequestSerializer:[AFHTTPRequestSerializer serializer]];
+    [[SCSharedClient sharedClient].requestSerializer setAuthorizationHeaderFieldWithUsername:username password:andPassword];
+    return nil;
 }
 
 -(instancetype)get:(NSObject *)withParameters
 {
-    /*
     [[SCSharedClient sharedClient] GET:[self getInstanceUrl] parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
         NSError *error = [[NSError alloc] init];
         AFJSONResponseSerializer *serializer = [[AFJSONResponseSerializer alloc] init];
         id jsonDict = [serializer responseObjectForResponse:responseObject data:nil error:&error];
-        
+        [self fromDictionary:jsonDict];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        
-    }]
+        //pass
+    }];
     return self;
-    */
 }
 
 @end

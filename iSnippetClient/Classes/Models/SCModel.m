@@ -24,8 +24,14 @@
 
 +(NSString *)getModelEndPointUrl
 {
-    return [NSString stringWithFormat:@"%@%@", self.getApiEndPointUrl, self.namespace];
+    return [NSString stringWithFormat:@"%@%@", [self getApiEndPointUrl], [self namespace]];
 }
+
++(NSString *)getAuthEndPointUrl
+{
+    return [NSString stringWithFormat:@"%@%@/", [self getApiEndPointUrl], @"api-auth"];
+}
+
 
 #pragma mark Instance messages.
 
@@ -37,6 +43,22 @@
 -(instancetype)post:(NSObject *)withParamters
 {
     return self;
+}
+
+- (NSDictionary *)asDictionary
+{
+    NSDictionary *JSONDictionary = [MTLJSONAdapter JSONDictionaryFromModel:self];
+    return JSONDictionary;
+}
+
+- (instancetype)fromDictionary:(NSDictionary *)aDictionary
+{
+    NSError *error = nil;
+    id model = [MTLJSONAdapter modelOfClass:self.class
+                         fromJSONDictionary:aDictionary
+                                      error:&error];
+    [self mergeValuesForKeysFromModel:model];
+    return model;
 }
 
 @end

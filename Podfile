@@ -4,6 +4,19 @@
 target "iSnippetClient" do
     pod 'AFNetworking', '~> 2.3'
     pod 'Mantle'
+    # OHHTTPStubs is a library designed to stub your network requests very
+    # easily.
+    pod 'OHHTTPStubs'
+    # XCTest+OHHTTPStubSuiteCleanUp will tell OHHHTTPStubs to stop stubbing
+    # requests after each XCTest test method is run to avoid stubs from one
+    # test leaking into another test.
+    pod 'XCTest+OHHTTPStubSuiteCleanUp' 
+    # expecta matchers
+    pod 'Expecta',     '~> 0.2.4'   
+    #specta bdd framework
+    pod 'Specta', '~> 0.1.11' 
+    # mockito
+    pod 'OCMock'
 end
 
 target "iSnippetClientTests" do

@@ -14,9 +14,11 @@ static const NSString *endpoint = @"/";
 
 /**
  *  This class is supposed to be abstract so please
- *  use it as an abstract class.
+ *      use it as an abstract class.
+ *  Derivates from MTLModel, and use the protocol
+ *      MTLJsonSerializing.
  */
-@interface SCModel : MTLModel
+@interface SCModel : MTLModel <MTLJSONSerializing>
 
 #pragma mark Static messages.
 /**
@@ -32,6 +34,13 @@ static const NSString *endpoint = @"/";
  *  @return the url for the model endpoint.
  */
 +(NSString *) getModelEndPointUrl;
+
+/**
+ *  Auth end point for the api.
+ *
+ *  @return an url.
+ */
++(NSString *) getAuthEndPointUrl;
 
 /**
  *  This message returns the name of the first 
@@ -62,5 +71,20 @@ static const NSString *endpoint = @"/";
  *  @return a model instance type.
  */
 -(instancetype) post:(NSObject *)withParamters;
+
+/**
+ *  Returns the object as a dictionary
+ *
+ *  @return a dictionary with the object value
+ */
+- (NSDictionary *) asDictionary;
+
+/**
+ *  Set the instance from the values given 
+ *  by the dictionary.
+ *
+ *  @return the instance.
+ */
+- (instancetype) fromDictionary:(NSDictionary *)aDictionary;
 
 @end
