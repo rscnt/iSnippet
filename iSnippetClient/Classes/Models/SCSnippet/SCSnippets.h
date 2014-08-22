@@ -6,8 +6,7 @@
 //  Copyright (c) 2014 rscnt. All rights reserved.
 //
 
-#import "SCModel.h"
+#import "SCModelCollection.h"
 
-@interface SCSnippets : SCModel
-
+@interface SCSnippets : SCModelCollection
 @end

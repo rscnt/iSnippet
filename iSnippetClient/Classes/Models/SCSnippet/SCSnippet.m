@@ -65,6 +65,7 @@
                          theLanguage:(anSnippetLanguage)theLanguage
                            withStyle:(anSnippetStyle)theStyle
                       andUsingLineOS:(BOOL)usingLineOS
+                          forTheUser:(SCUser *)theUser
 {
     
     
@@ -75,6 +76,7 @@
         self.code     = theCode;
         self.language = [SCSnippet getSnippetLanguageBy:theLanguage];
         self.style    = [SCSnippet getSnippetStyleBy:theStyle];
+        self.owner    = theUser.username;
         self.lineOS   = usingLineOS;
     }
     [[SCSharedClient sharedClient]
@@ -91,9 +93,28 @@
     }
      failure:^(NSURLSessionDataTask *task, NSError *error)
     {
-        //pass
+        //TODO: show error for init snippet with title.
     }];
     return self;
 }
 
+-(instancetype)updateSnippetWithTitle:(NSString *)title
+                              theCode:(NSString *)theCode
+                          theLanguage:(NSString *)theLanguage
+                            withStyle:(NSString *)withStyle
+                       andUsingLineOS:(BOOL)usingLineOS
+{
+    [[SCSharedClient sharedClient]
+     PUT:[self getInstanceUrl]
+     parameters:[self asDictionary]
+     success:^(NSURLSessionDataTask *task, id responseObject)
+    {
+        [self fromDictionary:responseObject];
+    }
+     failure:^(NSURLSessionDataTask *task, NSError *error)
+    {
+        //TODO: show error for update snippet with title.
+    }];
+    return self;
+}
 @end

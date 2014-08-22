@@ -7,6 +7,7 @@
 //
 
 #import "SCModelDetailed.h"
+#import "SCUser.h"
 
 @interface SCSnippet : SCModelDetailed
 
@@ -34,6 +35,7 @@ typedef enum SnippetStyle {
 @property (strong, nonatomic        ) NSString *code;
 @property (strong, nonatomic        ) NSString *language;
 @property (strong, nonatomic        ) NSString *style;
+@property (strong, nonatomic        ) NSString *owner;
 @property (nonatomic                ) BOOL     lineOS;
 
 /**
@@ -69,7 +71,8 @@ typedef enum SnippetStyle {
                               theCode:(NSString *)theCode
                           theLanguage:(anSnippetLanguage)theLanguage
                             withStyle:(anSnippetStyle)theStyle
-                       andUsingLineOS:(BOOL)usingLineOS;
+                       andUsingLineOS:(BOOL)usingLineOS
+                           forTheUser:(SCUser *)theUser;
 
 /**
  *  Update and snippet

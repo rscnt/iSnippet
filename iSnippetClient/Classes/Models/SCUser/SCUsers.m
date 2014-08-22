@@ -10,4 +10,9 @@
 
 @implementation SCUsers
 
++(NSString *)namespace
+{
+  return @"users";
+}
+
 @end

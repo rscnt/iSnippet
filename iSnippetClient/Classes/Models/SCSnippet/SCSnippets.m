@@ -8,6 +8,14 @@
 
 #import "SCSnippets.h"
 
+/**
+ *  Collections of models for class.
+ */
 @implementation SCSnippets
+
++(NSString *)namespace
+{
+    return  @"snippets";
+}
 
 @end
