@@ -8,7 +8,12 @@
 
 #import "SCModel.h"
 
-@implementation SCModel  
+@implementation SCModel
+
++(NSDictionary *)JSONKeyPathsByPropertyKey
+{
+    return [super performSelector:NSSelectorFromString(@"JSONKeyPathsByPropertyKey")];
+}
 
 #pragma mark Static messages.
 
