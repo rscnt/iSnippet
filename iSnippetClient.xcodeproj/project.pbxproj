@@ -28,6 +28,9 @@
 		EC5DACE619A69C8700556000 /* SCModelDetailed.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACE519A69C8700556000 /* SCModelDetailed.m */; };
 		EC5DACEA19A6A15D00556000 /* SCSharedClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACE919A6A15D00556000 /* SCSharedClient.m */; };
 		ECA25B7D19A7A38B0092F350 /* SCSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B7C19A7A38B0092F350 /* SCSnippet.m */; };
+		ECA25B8219A7E34C0092F350 /* SCSnippets.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B8119A7E34C0092F350 /* SCSnippets.m */; };
+		ECA25B8819A7E5350092F350 /* SCModelCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B8719A7E5350092F350 /* SCModelCollection.m */; };
+		ECA25B8B19A7F2B40092F350 /* SCUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B8A19A7F2B40092F350 /* SCUsers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,12 @@
 		EC5DACE919A6A15D00556000 /* SCSharedClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSharedClient.m; path = Classes/Shared/SCSharedClient.m; sourceTree = "<group>"; };
 		ECA25B7B19A7A38B0092F350 /* SCSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnippet.h; path = Classes/Models/SCSnippet/SCSnippet.h; sourceTree = "<group>"; };
 		ECA25B7C19A7A38B0092F350 /* SCSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSnippet.m; path = Classes/Models/SCSnippet/SCSnippet.m; sourceTree = "<group>"; };
+		ECA25B8019A7E34C0092F350 /* SCSnippets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnippets.h; path = Classes/Models/SCSnippet/SCSnippets.h; sourceTree = "<group>"; };
+		ECA25B8119A7E34C0092F350 /* SCSnippets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSnippets.m; path = Classes/Models/SCSnippet/SCSnippets.m; sourceTree = "<group>"; };
+		ECA25B8619A7E5350092F350 /* SCModelCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCModelCollection.h; path = Classes/Models/SCModelCollection.h; sourceTree = "<group>"; };
+		ECA25B8719A7E5350092F350 /* SCModelCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCModelCollection.m; path = Classes/Models/SCModelCollection.m; sourceTree = "<group>"; };
+		ECA25B8919A7F2B40092F350 /* SCUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCUsers.h; path = Classes/Models/SCUser/SCUsers.h; sourceTree = "<group>"; };
+		ECA25B8A19A7F2B40092F350 /* SCUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCUsers.m; path = Classes/Models/SCUser/SCUsers.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +192,7 @@
 		EC5DACD319A68D0600556000 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ECA25B7E19A7DF180092F350 /* Snippet */,
 				EC5DACE319A69C3D00556000 /* Abstracts */,
 				EC5DACDF19A6925100556000 /* User */,
 			);
@@ -222,8 +232,8 @@
 			children = (
 				EC5DACE019A6926D00556000 /* SCUser.h */,
 				EC5DACE119A6926D00556000 /* SCUser.m */,
-				ECA25B7B19A7A38B0092F350 /* SCSnippet.h */,
-				ECA25B7C19A7A38B0092F350 /* SCSnippet.m */,
+				ECA25B8919A7F2B40092F350 /* SCUsers.h */,
+				ECA25B8A19A7F2B40092F350 /* SCUsers.m */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -235,6 +245,8 @@
 				EC5DACDD19A6923300556000 /* SCModel.m */,
 				EC5DACE419A69C8700556000 /* SCModelDetailed.h */,
 				EC5DACE519A69C8700556000 /* SCModelDetailed.m */,
+				ECA25B8619A7E5350092F350 /* SCModelCollection.h */,
+				ECA25B8719A7E5350092F350 /* SCModelCollection.m */,
 			);
 			name = Abstracts;
 			sourceTree = "<group>";
@@ -246,6 +258,17 @@
 				EC5DACE919A6A15D00556000 /* SCSharedClient.m */,
 			);
 			name = Shared;
+			sourceTree = "<group>";
+		};
+		ECA25B7E19A7DF180092F350 /* Snippet */ = {
+			isa = PBXGroup;
+			children = (
+				ECA25B7B19A7A38B0092F350 /* SCSnippet.h */,
+				ECA25B7C19A7A38B0092F350 /* SCSnippet.m */,
+				ECA25B8019A7E34C0092F350 /* SCSnippets.h */,
+				ECA25B8119A7E34C0092F350 /* SCSnippets.m */,
+			);
+			name = Snippet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,14 +402,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA25B8219A7E34C0092F350 /* SCSnippets.m in Sources */,
 				EC5DACEA19A6A15D00556000 /* SCSharedClient.m in Sources */,
 				EC5DACB119A68CFB00556000 /* RSClientAppDelegate.m in Sources */,
 				EC5DACE619A69C8700556000 /* SCModelDetailed.m in Sources */,
 				EC5DACAD19A68CFB00556000 /* main.m in Sources */,
+				ECA25B8819A7E5350092F350 /* SCModelCollection.m in Sources */,
 				EC5DACB419A68CFB00556000 /* iSnippetClient.xcdatamodeld in Sources */,
 				EC5DACDE19A6923300556000 /* SCModel.m in Sources */,
 				EC5DACE219A6926D00556000 /* SCUser.m in Sources */,
 				ECA25B7D19A7A38B0092F350 /* SCSnippet.m in Sources */,
+				ECA25B8B19A7F2B40092F350 /* SCUsers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
