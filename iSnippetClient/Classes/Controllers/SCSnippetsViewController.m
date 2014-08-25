@@ -27,8 +27,11 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _snippetsViewModel = [[SCSnippetsViewModel alloc] init];
-    NSLog(@"Snippets: %@", _snippetsViewModel.textTitle);
+    _snippetsViewModel =
+    [[SCSnippetsViewModel alloc]
+     initWithCallback:^(SCSnippetsViewModel *snippetsViewModel) {
+         NSLog(@"Snippets View Model: %@", snippetsViewModel.snippets);
+     }];
 }
 
 - (void)didReceiveMemoryWarning

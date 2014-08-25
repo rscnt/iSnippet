@@ -21,13 +21,15 @@
              };
 }
 
-- (void)fetch
+- (void)fetchWithSuccess:(SuccessWithModelCollection)success
 {
     if ( ! self.currentPage ) { self.currentPage = @1; };
-    [self fetchFromPageNumber:self.currentPage];
+    [self fetchFromPageNumber:self.currentPage
+           withDoingAtSuccess:success];
 }
 
 -(void)fetchFromPageNumber:(NSNumber *)thePageNumber
+        withDoingAtSuccess:(SuccessWithModelCollection)success
 {
     NSDictionary *parameters = @{ @"page": thePageNumber };
     [[SCSharedClient sharedClient]
@@ -36,6 +38,11 @@
      success:^(NSURLSessionDataTask *task, id responseObject)
     {
         [self fromDictionary:responseObject];
+        NSLog(@"Model Collection fetched %@", responseObject);
+        /**
+         *  Executing success with model collection collection.
+         */
+        success(self);
     }
      failure:^(NSURLSessionDataTask *task, NSError *error)
     {
@@ -44,21 +51,21 @@
     }];
 }
 
-- (void)fetchPrevious
+- (void)fetchPreviousWithSuccess:(SuccessWithModelCollection)success
 {
     if (self.previous) {
         //previous number page
         self.currentPage = @([self.currentPage integerValue] - 1);
-        [self fetch];
+        [self fetchWithSuccess:success];
     }
 }
 
-- (void)fetchNext
+- (void)fetchNextWithSuccess:(SuccessWithModelCollection)success
 {
     if (self.previous) {
         //previous number page
         self.currentPage = @([self.currentPage integerValue] + 1);
-        [self fetch];
+        [self fetchWithSuccess:success];
     }
 }
 

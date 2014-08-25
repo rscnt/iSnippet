@@ -10,16 +10,24 @@
 
 @implementation SCSnippetsViewModel
 
--(instancetype)init
+-(void) setThisViewModel
+{
+    if (_snippets.count) {
+        _textTitle = [NSString stringWithFormat:@"Snippets %@", _snippets.count];
+    } else {
+        _textTitle = @"Snippets";
+    }
+}
+
+-(instancetype)initWithCallback:(void (^)(SCSnippetsViewModel *))aCallback
 {
     self = [super init];
     if (self) {
-        /*
-         * Init the snippets model and fetch
-         * the results on the server.
-         */
         _snippets = [[SCSnippets alloc] init];
-        [_snippets fetch];
+        [_snippets fetchWithSuccess:^(SCModelCollection* snippets){
+            [self setThisViewModel];
+            aCallback(self);
+        }];
     }
     return self;
 }
@@ -29,11 +37,7 @@
     self = [[SCSnippetsViewModel alloc] init];
     if (self) {
         _snippets = snippets;
-        if (_snippets.count) {
-            _textTitle = [NSString stringWithFormat:@"Snippets %@", _snippets.count];
-        } else {
-            _textTitle = @"Snippets";
-        }
+        [self setThisViewModel];
     }
     return self;
 };

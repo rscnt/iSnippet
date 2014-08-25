@@ -10,6 +10,9 @@
 
 @interface SCModelCollection : SCModel
 
+typedef void(^SuccessWithModelCollection)(SCModelCollection* modelCollection);
+
+
 /**
  *  The quantity of objects in the server 
  *  for the model.
@@ -36,14 +39,21 @@
  *  Fetchs the objects for the current page number
  *  defaults to 1 if no set.
  */
--(void) fetch;
+-(void) fetchWithSuccess:(SuccessWithModelCollection)success;
 
 /**
  *  Fetch the object for a page number given.
  *
  *  @param thePageNumber  an integer.
  */
--(void) fetchFromPageNumber:(NSNumber *)thePageNumber;
+/**
+ *  Fetch from a page number with a given respond.
+ *
+ *  @param thePageNumber the number of the page that is beign fetched.
+ *  @param callback      the callback that acts at success.
+ */
+-(void) fetchFromPageNumber:(NSNumber *)thePageNumber
+         withDoingAtSuccess:(SuccessWithModelCollection)callback;
 
 /**
  *  Fetch the objects for the next page,
@@ -51,7 +61,7 @@
  *
  *  @return an array of class objects
  */
--(void) fetchNext;
+-(void) fetchNextWithSuccess:(SuccessWithModelCollection)success;
 
 /**
  *  Fetch the objects for the previous page,
@@ -59,6 +69,6 @@
  *
  *  @return an array of class objects
  */
--(void) fetchPrevious;
+-(void) fetchPreviousWithSuccess:(SuccessWithModelCollection)success;
 
 @end
