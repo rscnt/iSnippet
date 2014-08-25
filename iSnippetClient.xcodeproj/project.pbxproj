@@ -27,10 +27,17 @@
 		EC5DACE219A6926D00556000 /* SCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACE119A6926D00556000 /* SCUser.m */; };
 		EC5DACE619A69C8700556000 /* SCModelDetailed.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACE519A69C8700556000 /* SCModelDetailed.m */; };
 		EC5DACEA19A6A15D00556000 /* SCSharedClient.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5DACE919A6A15D00556000 /* SCSharedClient.m */; };
+		ECA2206419AB9D27000F4AA9 /* SCSnippetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA2206319AB9D27000F4AA9 /* SCSnippetsViewController.m */; };
+		ECA2206719ABACE4000F4AA9 /* SCApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA2206619ABACE4000F4AA9 /* SCApplicationController.m */; };
 		ECA25B7D19A7A38B0092F350 /* SCSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B7C19A7A38B0092F350 /* SCSnippet.m */; };
 		ECA25B8219A7E34C0092F350 /* SCSnippets.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B8119A7E34C0092F350 /* SCSnippets.m */; };
 		ECA25B8819A7E5350092F350 /* SCModelCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B8719A7E5350092F350 /* SCModelCollection.m */; };
 		ECA25B8B19A7F2B40092F350 /* SCUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B8A19A7F2B40092F350 /* SCUsers.m */; };
+		ECA25B9219A7F4BD0092F350 /* SCSnippetViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B9119A7F4BD0092F350 /* SCSnippetViewModel.m */; };
+		ECA25B9519A7F8FE0092F350 /* SCSnippetsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B9419A7F8FE0092F350 /* SCSnippetsViewModel.m */; };
+		ECA25B9819A7FDAE0092F350 /* SCUserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B9719A7FDAE0092F350 /* SCUserViewModel.m */; };
+		ECA25B9B19A8046C0092F350 /* SCUsersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B9A19A8046C0092F350 /* SCUsersViewModel.m */; };
+		ECA4DA3319AB8605001AB2D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA4DA3219AB8605001AB2D4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +79,10 @@
 		EC5DACE519A69C8700556000 /* SCModelDetailed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCModelDetailed.m; path = Classes/Models/SCModelDetailed.m; sourceTree = "<group>"; };
 		EC5DACE819A6A15D00556000 /* SCSharedClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSharedClient.h; path = Classes/Shared/SCSharedClient.h; sourceTree = "<group>"; };
 		EC5DACE919A6A15D00556000 /* SCSharedClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSharedClient.m; path = Classes/Shared/SCSharedClient.m; sourceTree = "<group>"; };
+		ECA2206219AB9D27000F4AA9 /* SCSnippetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnippetsViewController.h; path = Classes/Controllers/SCSnippetsViewController.h; sourceTree = "<group>"; };
+		ECA2206319AB9D27000F4AA9 /* SCSnippetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSnippetsViewController.m; path = Classes/Controllers/SCSnippetsViewController.m; sourceTree = "<group>"; };
+		ECA2206519ABACE4000F4AA9 /* SCApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCApplicationController.h; path = Classes/Controllers/SCApplicationController.h; sourceTree = "<group>"; };
+		ECA2206619ABACE4000F4AA9 /* SCApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCApplicationController.m; path = Classes/Controllers/SCApplicationController.m; sourceTree = "<group>"; };
 		ECA25B7B19A7A38B0092F350 /* SCSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnippet.h; path = Classes/Models/SCSnippet/SCSnippet.h; sourceTree = "<group>"; };
 		ECA25B7C19A7A38B0092F350 /* SCSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSnippet.m; path = Classes/Models/SCSnippet/SCSnippet.m; sourceTree = "<group>"; };
 		ECA25B8019A7E34C0092F350 /* SCSnippets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnippets.h; path = Classes/Models/SCSnippet/SCSnippets.h; sourceTree = "<group>"; };
@@ -80,6 +91,15 @@
 		ECA25B8719A7E5350092F350 /* SCModelCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCModelCollection.m; path = Classes/Models/SCModelCollection.m; sourceTree = "<group>"; };
 		ECA25B8919A7F2B40092F350 /* SCUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCUsers.h; path = Classes/Models/SCUser/SCUsers.h; sourceTree = "<group>"; };
 		ECA25B8A19A7F2B40092F350 /* SCUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCUsers.m; path = Classes/Models/SCUser/SCUsers.m; sourceTree = "<group>"; };
+		ECA25B9019A7F4BD0092F350 /* SCSnippetViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnippetViewModel.h; path = Classes/ViewModels/Snippets/SCSnippetViewModel.h; sourceTree = "<group>"; };
+		ECA25B9119A7F4BD0092F350 /* SCSnippetViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSnippetViewModel.m; path = Classes/ViewModels/Snippets/SCSnippetViewModel.m; sourceTree = "<group>"; };
+		ECA25B9319A7F8FE0092F350 /* SCSnippetsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSnippetsViewModel.h; path = Classes/ViewModels/Snippets/SCSnippetsViewModel.h; sourceTree = "<group>"; };
+		ECA25B9419A7F8FE0092F350 /* SCSnippetsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSnippetsViewModel.m; path = Classes/ViewModels/Snippets/SCSnippetsViewModel.m; sourceTree = "<group>"; };
+		ECA25B9619A7FDAE0092F350 /* SCUserViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCUserViewModel.h; path = Classes/ViewModels/SCUsers/SCUserViewModel.h; sourceTree = "<group>"; };
+		ECA25B9719A7FDAE0092F350 /* SCUserViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCUserViewModel.m; path = Classes/ViewModels/SCUsers/SCUserViewModel.m; sourceTree = "<group>"; };
+		ECA25B9919A8046C0092F350 /* SCUsersViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCUsersViewModel.h; path = Classes/ViewModels/SCUsers/SCUsersViewModel.h; sourceTree = "<group>"; };
+		ECA25B9A19A8046C0092F350 /* SCUsersViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCUsersViewModel.m; path = Classes/ViewModels/SCUsers/SCUsersViewModel.m; sourceTree = "<group>"; };
+		ECA4DA3219AB8605001AB2D4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboard/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,10 +165,9 @@
 		EC5DACA619A68CFB00556000 /* iSnippetClient */ = {
 			isa = PBXGroup;
 			children = (
+				ECA25B8C19A7F3990092F350 /* Views */,
+				ECA25B8D19A7F3A00092F350 /* ViewModels */,
 				EC5DACE719A6A01C00556000 /* Shared */,
-				EC5DACD819A68E5E00556000 /* Controller */,
-				EC5DACD719A68E5800556000 /* View */,
-				EC5DACD619A68E3800556000 /* ViewModels */,
 				EC5DACD519A68E3000556000 /* Controllers */,
 				EC5DACD319A68D0600556000 /* Models */,
 				EC5DACAF19A68CFB00556000 /* RSClientAppDelegate.h */,
@@ -202,29 +221,12 @@
 		EC5DACD519A68E3000556000 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ECA2206219AB9D27000F4AA9 /* SCSnippetsViewController.h */,
+				ECA2206319AB9D27000F4AA9 /* SCSnippetsViewController.m */,
+				ECA2206519ABACE4000F4AA9 /* SCApplicationController.h */,
+				ECA2206619ABACE4000F4AA9 /* SCApplicationController.m */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		EC5DACD619A68E3800556000 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ViewModels;
-			sourceTree = "<group>";
-		};
-		EC5DACD719A68E5800556000 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		EC5DACD819A68E5E00556000 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Controller;
 			sourceTree = "<group>";
 		};
 		EC5DACDF19A6925100556000 /* User */ = {
@@ -269,6 +271,45 @@
 				ECA25B8119A7E34C0092F350 /* SCSnippets.m */,
 			);
 			name = Snippet;
+			sourceTree = "<group>";
+		};
+		ECA25B8C19A7F3990092F350 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECA4DA3219AB8605001AB2D4 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		ECA25B8D19A7F3A00092F350 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ECA25B8F19A7F4540092F350 /* Users */,
+				ECA25B8E19A7F44D0092F350 /* Snippets */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		ECA25B8E19A7F44D0092F350 /* Snippets */ = {
+			isa = PBXGroup;
+			children = (
+				ECA25B9019A7F4BD0092F350 /* SCSnippetViewModel.h */,
+				ECA25B9119A7F4BD0092F350 /* SCSnippetViewModel.m */,
+				ECA25B9319A7F8FE0092F350 /* SCSnippetsViewModel.h */,
+				ECA25B9419A7F8FE0092F350 /* SCSnippetsViewModel.m */,
+			);
+			name = Snippets;
+			sourceTree = "<group>";
+		};
+		ECA25B8F19A7F4540092F350 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				ECA25B9619A7FDAE0092F350 /* SCUserViewModel.h */,
+				ECA25B9719A7FDAE0092F350 /* SCUserViewModel.m */,
+				ECA25B9919A8046C0092F350 /* SCUsersViewModel.h */,
+				ECA25B9A19A8046C0092F350 /* SCUsersViewModel.m */,
+			);
+			name = Users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,6 +392,7 @@
 			files = (
 				EC5DACAB19A68CFB00556000 /* InfoPlist.strings in Resources */,
 				EC5DACB619A68CFB00556000 /* Images.xcassets in Resources */,
+				ECA4DA3319AB8605001AB2D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +444,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA2206719ABACE4000F4AA9 /* SCApplicationController.m in Sources */,
+				ECA2206419AB9D27000F4AA9 /* SCSnippetsViewController.m in Sources */,
 				ECA25B8219A7E34C0092F350 /* SCSnippets.m in Sources */,
+				ECA25B9819A7FDAE0092F350 /* SCUserViewModel.m in Sources */,
 				EC5DACEA19A6A15D00556000 /* SCSharedClient.m in Sources */,
 				EC5DACB119A68CFB00556000 /* RSClientAppDelegate.m in Sources */,
 				EC5DACE619A69C8700556000 /* SCModelDetailed.m in Sources */,
@@ -410,9 +455,12 @@
 				ECA25B8819A7E5350092F350 /* SCModelCollection.m in Sources */,
 				EC5DACB419A68CFB00556000 /* iSnippetClient.xcdatamodeld in Sources */,
 				EC5DACDE19A6923300556000 /* SCModel.m in Sources */,
+				ECA25B9219A7F4BD0092F350 /* SCSnippetViewModel.m in Sources */,
 				EC5DACE219A6926D00556000 /* SCUser.m in Sources */,
 				ECA25B7D19A7A38B0092F350 /* SCSnippet.m in Sources */,
+				ECA25B9B19A8046C0092F350 /* SCUsersViewModel.m in Sources */,
 				ECA25B8B19A7F2B40092F350 /* SCUsers.m in Sources */,
+				ECA25B9519A7F8FE0092F350 /* SCSnippetsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

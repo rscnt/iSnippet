@@ -12,15 +12,31 @@
 static const NSString *host = @"http://127.0.0.1:8000";
 static const NSString *endpoint = @"/";
 
+@protocol SCEndPoint
+
+/**
+ *  This message returns the name of the first 
+ *  namespace for the model.
+ *  For example in: api.org/foo/bar, the namespace
+ *  here is "foo".
+ *
+ *  @return an string with the namespace
+ */
+-(NSString *) namespace;
+
+
+@end
+
 /**
  *  This class is supposed to be abstract so please
  *      use it as an abstract class.
  *  Derivates from MTLModel, and use the protocol
  *      MTLJsonSerializing.
  */
-@interface SCModel : MTLModel <MTLJSONSerializing>
+@interface SCModel : MTLModel <MTLJSONSerializing, SCEndPoint>
 
 #pragma mark Static messages.
+
 /**
  *  The endpoint to the api
  *
@@ -41,16 +57,6 @@ static const NSString *endpoint = @"/";
  *  @return an url.
  */
 +(NSString *) getAuthEndPointUrl;
-
-/**
- *  This message returns the name of the first 
- *  namespace for the model.
- *  For example in: api.org/foo/bar, the namespace
- *  here is "foo".
- *
- *  @return an string with the namespace
- */
-+(NSString *) namespace;
 
 #pragma mark Instance messages.
 /**

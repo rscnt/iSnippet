@@ -17,6 +17,9 @@ target "iSnippetClient" do
     pod 'Specta', '~> 0.1.11' 
     # mockito
     pod 'OCMock'
+    # CocoaLumberjack is a fast & simple,
+    # yet powerful & flexible logging framework for Mac and iOS.
+    pod 'CocoaLumberjack'
 end
 
 target "iSnippetClientTests" do

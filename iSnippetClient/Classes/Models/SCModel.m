@@ -12,7 +12,10 @@
 
 +(NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return [super performSelector:NSSelectorFromString(@"JSONKeyPathsByPropertyKey")];
+    @throw [NSException
+            exceptionWithName:NSInternalInconsistencyException
+            reason:[NSString stringWithFormat:@"You must override %@ in a subclass",NSStringFromSelector(_cmd)]
+            userInfo:nil];
 }
 
 #pragma mark Static messages.
@@ -24,7 +27,10 @@
 
 +(NSString *)namespace
 {
-    return self.namespace;
+    @throw [NSException
+            exceptionWithName:NSInternalInconsistencyException
+            reason:[NSString stringWithFormat:@"You must override %@ in a subclass",NSStringFromSelector(_cmd)]
+            userInfo:nil];
 }
 
 +(NSString *)getModelEndPointUrl
@@ -39,6 +45,14 @@
 
 
 #pragma mark Instance messages.
+
+- (NSString *)namespace
+{
+    @throw [NSException
+            exceptionWithName:NSInternalInconsistencyException
+            reason:[NSString stringWithFormat:@"You must override %@ in a subclass",NSStringFromSelector(_cmd)]
+            userInfo:nil];
+}
 
 -(instancetype)get:(NSObject *)withParameters
 {

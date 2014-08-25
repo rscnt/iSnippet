@@ -61,12 +61,4 @@
  */
 -(void) fetchPrevious;
 
-/**
- *  A shared collection aka some sort of singleton.
- *
- *  @return an instance of this class;
- */
--(instancetype) sharedCollection;
-
-
 @end

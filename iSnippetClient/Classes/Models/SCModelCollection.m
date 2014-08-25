@@ -11,14 +11,14 @@
 
 @implementation SCModelCollection
 
-+ (instancetype)sharedCollection
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    static SCModelCollection *_sharedCollection = nil;
-    dispatch_once_t *predictate;
-    dispatch_once(predictate, ^{
-        _sharedCollection = [[SCModelCollection alloc] init];
-    });
-    return _sharedCollection;
+    return @{
+             @"count"    : @"count",
+             @"next"     : @"next",
+             @"previous" : @"previous",
+             @"results"  : @"results"
+             };
 }
 
 - (void)fetch
@@ -31,7 +31,7 @@
 {
     NSDictionary *parameters = @{ @"page": thePageNumber };
     [[SCSharedClient sharedClient]
-     GET:[SCModelCollection getModelEndPointUrl]
+     GET:[self.class getModelEndPointUrl]
      parameters:parameters
      success:^(NSURLSessionDataTask *task, id responseObject)
     {

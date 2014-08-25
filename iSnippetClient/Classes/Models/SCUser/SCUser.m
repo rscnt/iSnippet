@@ -13,12 +13,30 @@
 @implementation SCUser
 
 
-+ (NSString *)namespace
++(NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return @"users/";
+    return @{
+             @"url"      : @"url",
+             @"username" : @"username",
+             @"snippets" : @"snippets"
+             };
 }
 
-+(instancetype)authenticateUserWithUsername:(NSString *)username andPassword:(NSString *)andPassword
++ (NSString *)namespace
+{
+    return @"users";
+}
+
+-(instancetype)initWithUsername:(NSString *)username andPassword:(NSString *)andPasswords
+{
+    self = [super init];
+    if (self) {
+        [self authenticateUserWithUsername:username andPassword:andPasswords];
+    }
+    return self;
+}
+
+-(instancetype)authenticateUserWithUsername:(NSString *)username andPassword:(NSString *)andPassword
 {
     [[SCSharedClient sharedClient] setRequestSerializer:[AFHTTPRequestSerializer serializer]];
     [[SCSharedClient sharedClient].requestSerializer setAuthorizationHeaderFieldWithUsername:username password:andPassword];

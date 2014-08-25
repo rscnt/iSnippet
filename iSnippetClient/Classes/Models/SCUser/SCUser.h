@@ -20,6 +20,16 @@
 @property (strong, nonatomic          ) NSMutableArray *snippets;
 
 /**
+ *  Init an user by its username and password.
+ *
+ *  @param username     username
+ *  @param andPasswords password
+ *
+ *  @return an user object
+ */
+- (instancetype) initWithUsername:(NSString *)username
+                      andPassword:(NSString *)andPasswords;
+/**
  *  Given an username and password this methods send a request
  *  to the server to authenticated the user.
  *
@@ -28,7 +38,7 @@
  *
  *  @return an user object requested.
  */
-+(instancetype)authenticateUserWithUsername:(NSString *)username
+-(instancetype)authenticateUserWithUsername:(NSString *)username
                                 andPassword:(NSString*)andPassword;
 
 @end

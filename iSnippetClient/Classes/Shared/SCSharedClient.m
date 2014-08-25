@@ -14,8 +14,8 @@
 +(instancetype)sharedClient
 {
     static SCSharedClient *_sharedClient = nil;
-    static dispatch_once_t *predicate;
-    dispatch_once(predicate, ^{
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
         _sharedClient = [[SCSharedClient alloc] initWithBaseURL:
                          [NSURL URLWithString:[SCModel getApiEndPointUrl]]];
     });
