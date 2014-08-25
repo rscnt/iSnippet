@@ -19,7 +19,7 @@
  *
  *  @return self.
  */
--(instancetype) initWithCallback:(void (^)(SCSnippetsViewModel *snippetsViewModel) )aCallback;
+-(instancetype) initWithCallback:(void (^)(SCSnippetsViewModel *snippetsViewModel))aCallback;
 
 /**
  *  A dummy function that set the properties of this View Model.

@@ -46,6 +46,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jaa-Po-RBS" id="ehW-jP-dPU"/>
+                                    <outlet property="delegate" destination="jaa-Po-RBS" id="OMP-sg-6DD"/>
+                                </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TsX-dq-hBM">
                                 <rect key="frame" x="-1" y="0.0" width="320" height="44"/>

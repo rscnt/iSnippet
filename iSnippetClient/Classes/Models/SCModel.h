@@ -67,7 +67,7 @@ static const NSString *endpoint = @"/";
  *
  *  @return model instance type.
  */
--(instancetype) get:(NSObject *)withParameters;
+-(instancetype) getWithDictionary:(void (^)(NSDictionary *dictionary))callback;
 
 /**
  *  Base method to publish to the server.

@@ -38,7 +38,6 @@
      success:^(NSURLSessionDataTask *task, id responseObject)
     {
         [self fromDictionary:responseObject];
-        NSLog(@"Model Collection fetched %@", responseObject);
         /**
          *  Executing success with model collection collection.
          */

@@ -28,7 +28,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.current_user = [[SCUser alloc] initWithUsername:@"rscnt" andPassword:@"admin"];
-    NSLog(@"Current user: %@", self.current_user.username);
 }
 
 - (void)didReceiveMemoryWarning

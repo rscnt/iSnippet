@@ -7,6 +7,7 @@
 //
 
 #import "SCSnippetsViewModel.h"
+#import "SCSnippet.h"
 #import "SCApplicationController.h"
 
 @interface SCSnippetsViewController : SCApplicationController <UITableViewDelegate, UITableViewDataSource>

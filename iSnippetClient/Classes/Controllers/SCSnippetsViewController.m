@@ -27,11 +27,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _snippetsViewModel =
-    [[SCSnippetsViewModel alloc]
-     initWithCallback:^(SCSnippetsViewModel *snippetsViewModel) {
-         NSLog(@"Snippets View Model: %@", snippetsViewModel.snippets);
-     }];
+    _snippetsViewModel = [[SCSnippetsViewModel alloc]
+                          initWithCallback:^(SCSnippetsViewModel *snippetsViewModel) {
+                              if (snippetsViewModel.snippets) {
+                                  NSLog(@"snippets view model %@",
+                                        snippetsViewModel.snippets);
+                                  _snippetsViewModel = snippetsViewModel;
+                              }
+                          }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,17 +58,28 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _snippetsViewModel.snippets.results.count;
+    return (NSInteger) _snippetsViewModel.snippets.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
+    NSLog(@"A table view with index path %@", indexPath);
+    /**
+     *  Using a table view cell from an identifier located 
+     *  at the snippets tab controller in main.storyboard
+     */
+    UITableViewCell *tableViewCell = [tableView dequeueReusableCellWithIdentifier:@"columnRepresentSnippet"];
+    if (tableViewCell == nil) {
+        tableViewCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"columnRepresentSnippet"];
+        tableViewCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
     if (_snippetsViewModel.snippets.results) {
-        for (id snippet in _snippetsViewModel.snippets.results) {
-            NSLog(@"%@", snippet[@"title"]);
+        for (id snippetObject in _snippetsViewModel.snippets.results) {
+            SCSnippet *snippet = [[SCSnippet alloc] initWithDictionary:snippetObject error:nil];
+            tableViewCell.textLabel.text = snippet.title;
+            tableViewCell.detailTextLabel.text = snippet.code;
         }
     }
-    return [[UITableViewCell alloc] init];
+    return tableViewCell;
 }
 @end
