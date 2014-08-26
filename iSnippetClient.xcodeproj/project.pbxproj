@@ -38,6 +38,7 @@
 		ECA25B9819A7FDAE0092F350 /* SCUserViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B9719A7FDAE0092F350 /* SCUserViewModel.m */; };
 		ECA25B9B19A8046C0092F350 /* SCUsersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA25B9A19A8046C0092F350 /* SCUsersViewModel.m */; };
 		ECA4DA3319AB8605001AB2D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA4DA3219AB8605001AB2D4 /* Main.storyboard */; };
+		ECD601EF19ACE20F008BCC87 /* SCSharedNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD601EE19ACE20F008BCC87 /* SCSharedNotificationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		ECA25B9919A8046C0092F350 /* SCUsersViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCUsersViewModel.h; path = Classes/ViewModels/SCUsers/SCUsersViewModel.h; sourceTree = "<group>"; };
 		ECA25B9A19A8046C0092F350 /* SCUsersViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCUsersViewModel.m; path = Classes/ViewModels/SCUsers/SCUsersViewModel.m; sourceTree = "<group>"; };
 		ECA4DA3219AB8605001AB2D4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboard/Main.storyboard; sourceTree = "<group>"; };
+		ECD601ED19ACE20F008BCC87 /* SCSharedNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCSharedNotificationManager.h; path = Classes/Shared/SCSharedNotificationManager.h; sourceTree = "<group>"; };
+		ECD601EE19ACE20F008BCC87 /* SCSharedNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCSharedNotificationManager.m; path = Classes/Shared/SCSharedNotificationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +261,8 @@
 			children = (
 				EC5DACE819A6A15D00556000 /* SCSharedClient.h */,
 				EC5DACE919A6A15D00556000 /* SCSharedClient.m */,
+				ECD601ED19ACE20F008BCC87 /* SCSharedNotificationManager.h */,
+				ECD601EE19ACE20F008BCC87 /* SCSharedNotificationManager.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -447,6 +452,7 @@
 				ECA2206719ABACE4000F4AA9 /* SCApplicationController.m in Sources */,
 				ECA2206419AB9D27000F4AA9 /* SCSnippetsViewController.m in Sources */,
 				ECA25B8219A7E34C0092F350 /* SCSnippets.m in Sources */,
+				ECD601EF19ACE20F008BCC87 /* SCSharedNotificationManager.m in Sources */,
 				ECA25B9819A7FDAE0092F350 /* SCUserViewModel.m in Sources */,
 				EC5DACEA19A6A15D00556000 /* SCSharedClient.m in Sources */,
 				EC5DACB119A68CFB00556000 /* RSClientAppDelegate.m in Sources */,

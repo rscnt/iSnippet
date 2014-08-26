@@ -22,8 +22,20 @@
 
 -(NSString *)getInstanceUrl
 {
-    return [NSString stringWithFormat:@"%@%ld", SCModelDetailed.getModelEndPointUrl,
-            (long)self.id];
+    return [NSString stringWithFormat:@"%@%ld",
+            SCModelDetailed.getModelEndPointUrl, (long)self.id];
+}
+
+
+-(void)getWithParameters:(NSDictionary *)dictionary
+  andRecieveWithCallback:(void (^)(NSDictionary *))callback
+{
+    [[SCSharedClient sharedClient] GET:[self getInstanceUrl] parameters:dictionary success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"%@", responseObject);
+        callback(responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"Error at fetching a detailed model.");
+    }];
 }
 
 @end

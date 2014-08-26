@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SCSharedNotificationManager.h"
+#import "SCSharedClient.h"
 #import <Mantle.h>
 
 static const NSString *host = @"http://127.0.0.1:8000";
@@ -58,16 +60,25 @@ static const NSString *endpoint = @"/";
  */
 +(NSString *) getAuthEndPointUrl;
 
-#pragma mark Instance messages.
 /**
- *  Base method to fetch from a remote
- *  server.
+ *  A notification center used for comunication between models.
  *
- *  @param withParameters parameters to send
- *
- *  @return model instance type.
+ *  @return an instance of the notification center.
  */
--(instancetype) getWithDictionary:(void (^)(NSDictionary *dictionary))callback;
++(NSNotificationCenter *) notificationCenter;
+
+#pragma mark Instance messages.
+
+/**
+ *  Does a fetch request to the server, passes a dictionary which is the response to
+ *  the callback.
+ *
+ *  @param dictionary the parameters as dictionary that will be sended to the server.
+ *  @param callback   the callback that will recieve a dictionary which is the response object.
+ */
+-(void) getWithParameters:(NSDictionary *)dictionary
+   andRecieveWithCallback:(void (^)(NSDictionary *dictionary))callback;
+
 
 /**
  *  Base method to publish to the server.
@@ -92,5 +103,9 @@ static const NSString *endpoint = @"/";
  *  @return the instance.
  */
 - (instancetype) fromDictionary:(NSDictionary *)aDictionary;
+
+/**
+ *  
+ */
 
 @end

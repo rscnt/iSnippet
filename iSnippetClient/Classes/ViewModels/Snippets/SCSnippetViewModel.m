@@ -25,7 +25,6 @@
     self = [[SCSnippetViewModel alloc] init];
     if (self) {
         _snippet = [[SCSnippet alloc] init];
-        [_snippet get:nil];
     }
     return self;
 };

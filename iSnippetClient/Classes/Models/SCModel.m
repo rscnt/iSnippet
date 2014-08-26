@@ -10,6 +10,15 @@
 
 @implementation SCModel
 
++ (NSNotificationCenter *) notificationCenter {
+    static NSNotificationCenter *_notificationCenter = nil;
+    static dispatch_once_t predicate;
+    dispatch_once(&predicate, ^{
+        _notificationCenter = [NSNotificationCenter defaultCenter];
+    });
+    return _notificationCenter;
+}
+
 +(NSDictionary *)JSONKeyPathsByPropertyKey
 {
     @throw [NSException
@@ -35,12 +44,14 @@
 
 +(NSString *)getModelEndPointUrl
 {
-    return [NSString stringWithFormat:@"%@%@", [self getApiEndPointUrl], [self namespace]];
+    return [NSString stringWithFormat:@"%@%@",
+            [self getApiEndPointUrl], [self namespace]];
 }
 
 +(NSString *)getAuthEndPointUrl
 {
-    return [NSString stringWithFormat:@"%@%@/", [self getApiEndPointUrl], @"api-auth"];
+    return [NSString stringWithFormat:@"%@%@/",
+            [self getApiEndPointUrl], @"api-auth"];
 }
 
 
@@ -54,14 +65,21 @@
             userInfo:nil];
 }
 
--(instancetype)get:(NSObject *)withParameters
+-(void) getWithParameters:(NSDictionary *)dictionary
+   andRecieveWithCallback:(void (^)(NSDictionary *dictionary))callback
 {
-    return self;
+    @throw [NSException
+            exceptionWithName:NSInternalInconsistencyException
+            reason:[NSString stringWithFormat:@"You must override %@ in a subclass",NSStringFromSelector(_cmd)]
+            userInfo:nil];
 }
 
 -(instancetype)post:(NSObject *)withParamters
 {
-    return self;
+    @throw [NSException exceptionWithName:NSInternalInconsistencyException
+                                   reason:[NSString stringWithFormat:@"You must override %@ in a subclass",
+                                           NSStringFromSelector(_cmd)]
+                                 userInfo:nil];
 }
 
 - (NSDictionary *)asDictionary

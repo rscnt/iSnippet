@@ -30,8 +30,6 @@
     _snippetsViewModel = [[SCSnippetsViewModel alloc]
                           initWithCallback:^(SCSnippetsViewModel *snippetsViewModel) {
                               if (snippetsViewModel.snippets) {
-                                  NSLog(@"snippets view model %@",
-                                        snippetsViewModel.snippets);
                                   _snippetsViewModel = snippetsViewModel;
                               }
                           }];

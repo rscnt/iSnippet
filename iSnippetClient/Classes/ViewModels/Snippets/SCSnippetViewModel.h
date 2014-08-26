@@ -28,7 +28,7 @@ typedef void (^SnippetWithSuccess)(SCSnippet *theSnippet);
  */
 -(instancetype) initWithSnippet:(SCSnippet *)theSnippet;
 
--(instancetype) initWithCallback:(SCSnippet *)theSnippet;
+- (instancetype)initWIthCallback:(void (^)(SCSnippetViewModel *snippetsViewModel) )aCallback;
 
 @property (readonly, nonatomic) SCSnippet *snippet;
 @property (readonly, nonatomic) NSString  *textTitle;

@@ -32,22 +32,13 @@
         withDoingAtSuccess:(SuccessWithModelCollection)success
 {
     NSDictionary *parameters = @{ @"page": thePageNumber };
-    [[SCSharedClient sharedClient]
-     GET:[self.class getModelEndPointUrl]
-     parameters:parameters
-     success:^(NSURLSessionDataTask *task, id responseObject)
-    {
-        [self fromDictionary:responseObject];
+   [self getWithParameters:parameters andRecieveWithCallback:^(NSDictionary *dictionary) {
         /**
          *  Executing success with model collection collection.
          */
+        [self fromDictionary:dictionary];
         success(self);
-    }
-     failure:^(NSURLSessionDataTask *task, NSError *error)
-    {
-        // TODO:  Add error manager for fetch
-        //  on abstract model collection.
-    }];
+   }];
 }
 
 - (void)fetchPreviousWithSuccess:(SuccessWithModelCollection)success
@@ -66,6 +57,16 @@
         self.currentPage = @([self.currentPage integerValue] + 1);
         [self fetchWithSuccess:success];
     }
+}
+
+-(void)getWithParameters:(NSDictionary *)dictionary
+  andRecieveWithCallback:(void (^)(NSDictionary *))callback
+{
+    [[SCSharedClient sharedClient] GET:[self.class getModelEndPointUrl] parameters:dictionary success:^(NSURLSessionDataTask *task, id responseObject) {
+        callback(responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"Error at fetching a detailed model.");
+    }];
 }
 
 @end
